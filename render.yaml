@@ -1,7 +1,7 @@
 services:
   - type: web
     name: youtube-transcript-api
-    env: python
+    runtime: python
     plan: free
     buildCommand: ""
     startCommand: gunicorn main:app --bind 0.0.0.0:10000
